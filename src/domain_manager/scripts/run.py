@@ -7,6 +7,7 @@ from colorama import Fore
 from scripts.active_sites import delete_live_site, launch_live_site
 from scripts.categorize_site import categorize_live_site
 from scripts.check_categories import check_categories
+from scripts.create_admin_email import generate_admin_email
 from scripts.dns_record_handler import generate_hosted_zones
 from scripts.get_data import (
     get_application_list,
@@ -34,6 +35,7 @@ def run():
             s.case("c", categorize_live_site)
             s.case("e", delete_live_site)
             s.case("h", check_categories)
+            s.case("g", generate_admin_email)
             s.case(["x", "bye", "exit", "exit()"], exit_app)
             s.default(unknown_command)
 
@@ -52,6 +54,7 @@ Create DNS [R]ecord handlers
 [L]aunch a new site
 [C]ategorize an existing site
 Delete an [E]xisting site
+[G]enerate an admin email
 e[X]it
 
     """
