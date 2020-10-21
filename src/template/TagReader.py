@@ -25,6 +25,6 @@ def write_json(tags):
     jsonString = jsonString.rstrip(',') + "]"
     print(jsonString)
 
-myTags = get_tags(".\\src\\template\\templates\\Family_Lawyer_Template")
+myTags = get_tags(".\\src\\template\\templates\\Home_Health_Agency_Template")
 write_json(myTags)
 
