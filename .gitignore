@@ -6,6 +6,9 @@ __pycache__
 /Scripts
 .venv/
 .env
+/build
+/dist
+*.spec
 
 # VS Code
 .vscode

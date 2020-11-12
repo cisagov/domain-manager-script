@@ -21,3 +21,6 @@ run:
 lint:
 	pre-commit autoupdate
 	pre-commit run --all-files
+
+build:
+	pyinstaller --distpath ./dist --noconfirm --clean --workpath ./build --onefile --name dm --paths ./src ./src/domain_manager/main.py
